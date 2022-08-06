@@ -140,6 +140,7 @@ def insert(new_student):
     for fila in c.execute('SELECT * FROM estudiante'):
         print(fila)
 
+    conn.commit()
     conn.close
 
 
